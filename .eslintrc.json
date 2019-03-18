@@ -1,0 +1,34 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "worker": true
+  },
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 9
+  },
+  "rules": {
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "dot-notation": "error",
+    "eol-last": ["error", "always"],
+    "indent": 0,
+    "no-console": 0,
+    "no-duplicate-imports": 2,
+    "no-eval": "error",
+    "no-implied-eval": "error",
+    "no-unused-vars": 2,
+    "no-var": 2,
+    "object-shorthand": 2,
+    "one-var": ["error", "never"],
+    "prefer-arrow-callback": 2,
+    "prefer-const": 2,
+    "prefer-template": 2,
+    "quotes": 0,
+    "semi": ["error", "always"],
+    "sort-imports": 2,
+    "spaced-comment": ["error", "always", { "block": { "balanced": true } }]
+  },
+  "plugins": ["prettier"]
+}
