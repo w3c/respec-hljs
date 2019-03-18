@@ -18,5 +18,5 @@ hljs.registerLanguage("xml", xml);
 
 export const respecHljs = hljs;
 
-// For worker, as we can't import yet
-self.respecHljs = hljs;
+// For worker, as we can't ES6 import yet
+(module || self).respecHljs = hljs;
