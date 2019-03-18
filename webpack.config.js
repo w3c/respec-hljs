@@ -7,9 +7,10 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     library: "",
     libraryTarget: "umd",
+    globalObject: "this"
   },
   optimization: {
     usedExports: true,
   },
-  mode: "development",
+  mode: "production",
 };
