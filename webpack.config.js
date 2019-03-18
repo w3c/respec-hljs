@@ -6,10 +6,10 @@ module.exports = {
     filename: "respec-highlight.js",
     path: path.resolve(__dirname, "dist"),
     library: "",
-    libraryTarget: "commonjs",
+    libraryTarget: "umd",
   },
   optimization: {
     usedExports: true,
   },
-  mode: "production",
+  mode: "development",
 };
