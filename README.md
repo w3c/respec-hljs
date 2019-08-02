@@ -1,5 +1,7 @@
 ## ReSpec custom highlighter
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/w3c/respec-hljs.svg)](https://greenkeeper.io/)
+
 The highlighter bundle used by ReSpec.
 
 The bundle is build as a Commonjs module ("dist/respec-highlight.js").
