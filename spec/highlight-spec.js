@@ -26,10 +26,10 @@ describe("respec-highlight bundle", () => {
     expect(value).toContain('<span class="hljs-attr">"prop"</span>:');
   });
   it("highlights xml/html", () => {
-    const { value, language } = hljs.highlightAuto(
-      `<script type="application/javascript">`,
-      ["html"]
-    );
+    const {
+      value,
+      language
+    } = hljs.highlightAuto(`<script type="application/javascript">`, ["html"]);
     expect(language).toBe("html");
     expect(value).toContain('<span class="hljs-name">script</span>');
   });
