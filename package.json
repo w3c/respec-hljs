@@ -24,7 +24,7 @@
     "eslint-plugin-prettier": "^3.1.1",
     "highlight.js": "^9.16.2",
     "jasmine": "^3.5.0",
-    "prettier": "^1.19.0",
+    "prettier": "^2.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   }
