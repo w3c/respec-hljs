@@ -3,7 +3,7 @@ const { hljs } = require("../dist/respec-highlight");
 describe("respec-highlight bundle", () => {
   it("highlights css", () => {
     const { value, language } = hljs.highlightAuto(`@import url(some.css);`, [
-      "css"
+      "css",
     ]);
     expect(language).toBe("css");
     expect(value).toContain('<span class="hljs-keyword">import</span>');
@@ -15,7 +15,7 @@ describe("respec-highlight bundle", () => {
   });
   it("highlights javascript", () => {
     const { value, language } = hljs.highlightAuto(`function test(){}`, [
-      "javascript"
+      "javascript",
     ]);
     expect(language).toBe("javascript");
     expect(value).toContain('<span class="hljs-keyword">function</span>');
@@ -28,7 +28,7 @@ describe("respec-highlight bundle", () => {
   it("highlights xml/html", () => {
     const {
       value,
-      language
+      language,
     } = hljs.highlightAuto(`<script type="application/javascript">`, ["html"]);
     expect(language).toBe("html");
     expect(value).toContain('<span class="hljs-name">script</span>');

@@ -7,7 +7,7 @@ import xml from "highlight.js/lib/languages/xml";
 
 highlight.configure({
   tabReplace: "  ", // 2 spaces
-  languages: ["abnf", "css", "http", "javascript", "json", "xml"]
+  languages: ["abnf", "css", "http", "javascript", "json", "xml"],
 });
 
 highlight.registerLanguage("css", css);
