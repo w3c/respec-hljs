@@ -1,6 +1,6 @@
 ## ReSpec custom highlighter
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/w3c/respec-hljs.svg)](https://greenkeeper.io/)
+
 
 The highlighter bundle used by ReSpec.
 
