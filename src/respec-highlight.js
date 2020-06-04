@@ -1,4 +1,4 @@
-import * as highlight from "highlight.js/lib/highlight";
+import * as highlight from "highlight.js/lib/core";
 import css from "highlight.js/lib/languages/css";
 import http from "highlight.js/lib/languages/http";
 import javascript from "highlight.js/lib/languages/javascript";
