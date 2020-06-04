@@ -1,4 +1,5 @@
 import * as highlight from "highlight.js/lib/core";
+import abnf from "highlight.js/lib/languages/abnf";
 import css from "highlight.js/lib/languages/css";
 import http from "highlight.js/lib/languages/http";
 import javascript from "highlight.js/lib/languages/javascript";
@@ -10,6 +11,7 @@ highlight.configure({
   languages: ["abnf", "css", "http", "javascript", "json", "xml"],
 });
 
+highlight.registerLanguage("abnf", abnf);
 highlight.registerLanguage("css", css);
 highlight.registerLanguage("http", http);
 highlight.registerLanguage("javascript", javascript);
