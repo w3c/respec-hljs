@@ -6,7 +6,7 @@ describe("respec-highlight bundle", () => {
       "css",
     ]);
     expect(language).toBe("css");
-    expect(value).toContain('<span class="hljs-keyword">import</span>');
+    expect(value).toContain('<span class="hljs-keyword">@import</span>');
   });
   it("highlights http", () => {
     const { value, language } = hljs.highlightAuto(`Referer: me`, ["http"]);
