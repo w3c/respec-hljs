@@ -17,7 +17,10 @@ describe("respec-highlight bundle", () => {
     expect(value).toContain('<span class="hljs-keyword">@import</span>');
   });
   it("highlights http", () => {
-    const { value, language } = hljs.highlightAuto(`Referer: me`, ["http"]);
+    const { value, language } = hljs.highlightAuto(
+      `POST / HTTP/1.1\nReferer: somewhere`,
+      ["http"]
+    );
     expect(language).toBe("http");
     expect(value).toContain('<span class="hljs-attribute">Referer</span>');
   });
@@ -31,7 +34,7 @@ describe("respec-highlight bundle", () => {
   it("highlights json", () => {
     const { value, language } = hljs.highlightAuto(`{"prop": "value"}`);
     expect(language).toBe("json");
-    expect(value).toContain('<span class="hljs-attr">"prop"</span>:');
+    expect(value).toContain('<span class="hljs-attr">&quot;prop&quot;</span>:');
   });
   it("highlights xml/html", () => {
     const {
