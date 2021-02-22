@@ -5,7 +5,6 @@ module.exports = {
   output: {
     filename: "respec-highlight.js",
     path: path.resolve(__dirname, "dist"),
-    library: "",
     libraryTarget: "umd",
     globalObject: "this"
   },
